@@ -2,9 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Na GyeWon | Global Food Safety & Supplier Audit Professional",
-  description:
-    "Na GyeWon — Sales BDM & Food Auditor at BSI Korea. Building trust across global food supply chains through rigorous auditing, supplier assessment, and food safety culture.",
+  title: "대박동",
+  description: "메뉴 확인부터 예약 문의까지 카카오톡으로 간편하게 연결하세요.",
+  openGraph: {
+    title: "대박동",
+    description: "메뉴 확인부터 예약 문의까지 카카오톡으로 간편하게 연결하세요.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -13,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="ko" className="scroll-smooth">
       <body>{children}</body>
     </html>
   );
